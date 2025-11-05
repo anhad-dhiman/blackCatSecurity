@@ -1,5 +1,6 @@
+import { path } from 'framer-motion/client';
 import { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 function Hero() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -7,17 +8,20 @@ function Hero() {
         {
             image: "/systems.jpg",
             title: "Advanced CCTV Systems",
-            description: "State-of-the-art surveillance technology for complete peace of mind."
+            description: "State-of-the-art surveillance technology for complete peace of mind.",
+            path: "/services/securitysystems"
         },
         {
             image: "/alarm.jpeg",
             title: "Smart Alarm Solutions",
-            description: "Intelligent security systems designed to protect what matters most."
+            description: "Intelligent security systems designed to protect what matters most.",
+            path: "/services/homeautomation"
         },
         {
             image: "/cctv.jpg",
             title: "24/7 Security Monitoring",
-            description: "Round-the-clock protection for your home and business."
+            description: "Round-the-clock protection for your home and business.",
+            path: "/services/intercomsystems"
         }
     ];
 
@@ -60,7 +64,11 @@ function Hero() {
                             {slides[currentSlide].description}
                         </p>
                         <button className="btn btn-outline border-white text-white hover:bg-red-600 hover:border-red-600 text-lg px-8 py-3 font-medium transition">
-                            Learn More
+                            <div className="text-center">
+                                <Link to={slides[currentSlide].path}>
+                                    {slides[currentSlide].title}
+                                </Link>
+                            </div>
                         </button>
                     </div>
                 </div>

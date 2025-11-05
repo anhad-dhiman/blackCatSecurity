@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function Abt() {
     return (
         <section className=" text-black py-12 px-6 text-center">
@@ -7,12 +8,12 @@ function Abt() {
                 we specialize in protecting what matters most your home, business, and peace of mind. With cutting-edge technology, expert installation,
                 and 24/7 monitoring, we ensure that safety and reliability come first.
             </p>
-            <a
-                href="/about"
+            <Link
+                to="/about"
                 className="inline-block mt-6 px-6 py-2 text-white font-medium bg-red-600 rounded-full hover:bg-red-800 transition"
             >
                 Learn More →
-            </a>
+            </Link>
         </section>
 
     )

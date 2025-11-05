@@ -1,5 +1,4 @@
-
-
+import { Link } from 'react-router-dom';
 export default function StructuredWiring() {
     return (
         <div className="min-h-screen  text-gray-800 px-6 py-12">
@@ -79,12 +78,12 @@ export default function StructuredWiring() {
 
                 {/* CTA Section */}
                 <div className="text-center">
-                    <a
-                        href="/contact"
-                        className="inline-block px-8 py-3 bg-red-600 text-white font-semibold  rounded-full hover:bg-red-700 transition"
+                    <Link
+                        to="/contact"
+                        className="inline-block px-8 py-3 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition"
                     >
-                        Book a Consultation
-                    </a>
+                        Get a Security Assessment
+                    </Link>
                 </div>
             </div>
         </div>
