@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function SecuritySystems() {
     return (
         <div className="min-h-screen  text-gray-800 px-6 py-12">
@@ -69,12 +71,12 @@ export default function SecuritySystems() {
 
                 {/* Call to Action */}
                 <div className="text-center">
-                    <a
-                        href="/contact"
+                    <Link
+                        to="/contact"
                         className="inline-block px-8 py-3 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition"
                     >
                         Get a Security Assessment
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
