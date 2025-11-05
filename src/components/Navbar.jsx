@@ -6,9 +6,9 @@ function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="navbar bg-red-600 shadow-lg fixed top-0 left-0 right-0 z-50">
+        <div className="navbar bg-red-600 shadow-lg fixed top-0 left-0 right-0 z-50 overflow-x-hidden">
             <div className="flex-1 flex items-center justify-between px-4 md:px-8">
-                <img src="/logo.jpg" className="h-16 me-3 rounded" alt="BlackCat Logo" />
+                <img src="/logo.jpg" className="h-12 md:h-16 me-3 rounded" alt="BlackCat Logo" />
 
                 {/* Mobile menu toggle button */}
                 <button
